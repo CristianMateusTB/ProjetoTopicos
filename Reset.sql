@@ -48,3 +48,13 @@ insert into aut_autorizacao (aut_nome)
 insert into uau_usuario_autorizacao values (1, 1);
 insert into ant_anotacao(ant_texto, usr_id) 
     values ('Teste', 1);
+
+    
+create table glo_glossario (
+  glo_id bigint primary key auto_increment,
+  glo_termo varchar(30) not null,
+  glo_significado varchar(50) not null,
+  glo_sigla varchar(15) not null
+);
+insert into glo_glossario(glo_termo,glo_significado,glo_sigla)
+ values('prova','avaliação','pv '),('rodovia','estrada','ed');
